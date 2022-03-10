@@ -1,0 +1,1 @@
+export { allowTypeTextDirective } from './allowtypeoftext/alltypetext.directive';
