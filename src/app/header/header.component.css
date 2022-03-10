@@ -1,0 +1,12 @@
+.header-logo{
+    background-color: burlywood !important;
+    height: 100%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar.mat-primary{
+   background-color: #ffb7c2;   
+  }

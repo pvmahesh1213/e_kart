@@ -1,1 +1,166 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+*{
+    margin: 0px;
+}
+
+.margintop50px{
+    margin-top: 50px;
+}
+
+.active{
+    background-color: #fff;
+    color: #000;
+}
+
+.login-bg {
+    background: url(../src/assets/images/loginbg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vH;
+}
+
+.div-center {
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+    color: #fff;
+}
+
+.div-center-black {
+    width: 400px;
+    height: 250px;
+    background-color: transparent;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+    color: #000;
+}
+
+.signin .mat-form-field-underline, .signin .mat-form-field-underline:focus,
+.signup .mat-form-field-underline,.signup .mat-form-field-underline:focus {
+    background: none;
+    outline: 0px;
+    border-bottom: 3px solid #fff !important;
+    border: none;
+    border-radius: 0px;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.loginhheader{
+    margin: auto;
+    width: 400px;
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.align_center{
+    text-align: center;
+}
+
+.color_white{
+    color: #fff;
+}
+
+.div-center.signup{
+    height: 385px;
+}
+
+.main-container{
+    height: 88vh !important;
+    background: url(../src/assets/images/Signup_BG.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-container.container-fluid{
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 40px;
+}
+
+.top4px{
+    top:4px !important;
+}
+
+.pointer-couser{
+    cursor: pointer;
+}
+
+.margintop30px{
+    margin-top:30px !important;
+}
+
+.width180px{
+    width: 180px !important;
+}
+
+.textbolder{
+    font-weight: bolder;
+}
+
+.floatright{
+    float: right;
+}
+
+.height65{
+    height: 65px;
+}
+
+div.addaddress .mat-dialog-title{
+    background-color: #ff4081;
+    position: relative;
+    margin: -24px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+div.addaddress .mat-typography.mat-dialog-content{
+    margin-top: 30px;
+}
+
+div.addaddress .subheadding{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 10px;
+}
+
+div.addaddress .mat-dialog-content{
+    min-height: 70vh !important;
+}
+
+div.addaddress .mat-button-toggle-checked{
+    background-color: #fff;
+    border: 2px solid #ff4081 !important;
+    border-radius: 5px;
+}
+
+div.addaddress .mat-button-toggle{
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    margin: 2px;
+}
+
+div.addaddress .mat-button-toggle-group-appearance-standard{
+    border: none !important;
+}

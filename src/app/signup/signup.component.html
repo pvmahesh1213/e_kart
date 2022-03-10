@@ -1,0 +1,42 @@
+<div class="container-fluid login-bg">
+  <div class="margintop50px"></div>
+  <div class="text-center">
+    <img src="../../../assets/images/brand.png" width="120" />
+  </div>
+  <h2 class="loginhheader color_white">SIGN UP</h2>
+  <form class="example-container div-center signup" [formGroup]="signup" (submit)="signupSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="First Name" [appAllowtext]="{'mask':'letters',charLength:10}" type="text"
+        formControlName="firsname">
+      <mat-error *ngIf="signup.get('firsname').hasError('required')">First Name Field Is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last Name" [appAllowtext]="{'mask':'letters',charLength:10}" type="text"
+        formControlName="lastname">
+      <mat-error *ngIf="signup.get('lastname').hasError('required')">Last Name Field Is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Email" type="email" formControlName="email">
+      <mat-error *ngIf="signup.get('email').hasError('required')">Email Field Is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Phone Number" [appAllowtext]="{'mask':'numbers',charLength:10}" type="text"
+        formControlName="mobile">
+      <mat-error *ngIf="signup.get('mobile').hasError('required')">Phone Number Field Is Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Password" type="password" formControlName="password">
+      <mat-error *ngIf="signup.get('email').hasError('required')">Password Field Is Required</mat-error>
+    </mat-form-field>
+    <div class="align_center">
+      <button type="submit" mat-raised-button color="accent">SIGN UP</button>
+    </div>
+  </form>
+  <div class="text-center">
+    <p class="color_white">Already have an account?
+      <a class="color_white" [routerLink]="['/signin']">
+        <u> SIGN IN</u>
+      </a>
+    </p>
+  </div>
+</div>
